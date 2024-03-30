@@ -1,7 +1,9 @@
+import { Outlet } from "react-router-dom";
+
 const App = () => {
   return (
     <>
-      <h2>Hello World</h2>
+      <Outlet />
     </>
   );
 };
