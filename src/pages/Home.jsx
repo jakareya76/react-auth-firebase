@@ -4,13 +4,11 @@ import {
   GoogleAuthProvider,
   signOut,
 } from "firebase/auth";
-import { app } from "../firebase/firebase.init";
+import { auth } from "../firebase/firebase.config";
 import { useState } from "react";
 
 const Home = () => {
   const [user, setUser] = useState(null);
-
-  const auth = getAuth(app);
 
   const provider = new GoogleAuthProvider();
 
